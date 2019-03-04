@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.textName = new System.Windows.Forms.TextBox();
-            this.TextProgress = new System.Windows.Forms.TextBox();
+            this.textProgress = new System.Windows.Forms.TextBox();
             this.textBooks = new System.Windows.Forms.TextBox();
             this.listHand = new System.Windows.Forms.ListBox();
             this.buttonStart = new System.Windows.Forms.Button();
@@ -48,14 +48,14 @@
             this.textName.Size = new System.Drawing.Size(308, 46);
             this.textName.TabIndex = 0;
             // 
-            // TextProgress
+            // textProgress
             // 
-            this.TextProgress.Location = new System.Drawing.Point(36, 114);
-            this.TextProgress.Multiline = true;
-            this.TextProgress.Name = "TextProgress";
-            this.TextProgress.ReadOnly = true;
-            this.TextProgress.Size = new System.Drawing.Size(660, 515);
-            this.TextProgress.TabIndex = 1;
+            this.textProgress.Location = new System.Drawing.Point(36, 114);
+            this.textProgress.Multiline = true;
+            this.textProgress.Name = "textProgress";
+            this.textProgress.ReadOnly = true;
+            this.textProgress.Size = new System.Drawing.Size(660, 515);
+            this.textProgress.TabIndex = 1;
             // 
             // textBooks
             // 
@@ -83,6 +83,7 @@
             this.buttonStart.TabIndex = 5;
             this.buttonStart.Text = "Start the game !";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // buttonAsk
             // 
@@ -93,6 +94,7 @@
             this.buttonAsk.TabIndex = 6;
             this.buttonAsk.Text = "Ask for card";
             this.buttonAsk.UseVisualStyleBackColor = true;
+            this.buttonAsk.Click += new System.EventHandler(this.buttonAsk_Click);
             // 
             // label1
             // 
@@ -143,7 +145,7 @@
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.listHand);
             this.Controls.Add(this.textBooks);
-            this.Controls.Add(this.TextProgress);
+            this.Controls.Add(this.textProgress);
             this.Controls.Add(this.textName);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -155,7 +157,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textName;
-        private System.Windows.Forms.TextBox TextProgress;
+        private System.Windows.Forms.TextBox textProgress;
         private System.Windows.Forms.TextBox textBooks;
         private System.Windows.Forms.ListBox listHand;
         private System.Windows.Forms.Button buttonStart;
