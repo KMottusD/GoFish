@@ -15,6 +15,7 @@ namespace GoFish
         private Random random;
         private Deck cards;
         private TextBox textBoxOnForm;
+
         public Player(String name, Random random, TextBox textBoxOnForm)
         {
             this.name = name;
@@ -23,6 +24,7 @@ namespace GoFish
             this.cards = new Deck(new Card[] { });
             textBoxOnForm.Text += name + "has just joined the game" + Environment.NewLine;
         }
+
         public IEnumerable<Values> PullOutBooks()
         {
             List<Values> books = new List<Values>(); for (int i = 1; i <= 13; i++)
@@ -78,7 +80,6 @@ namespace GoFish
                 }
             }
         }
-
 
         public void TakeCard(Card card) { cards.Add(card); }
 

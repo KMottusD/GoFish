@@ -12,12 +12,12 @@ namespace GoFish
 {
     public partial class Form1 : Form
     {
+        private Game game;
+
         public Form1()
         {
             InitializeComponent();
         }
-
-        private Game game;
 
         private void buttonStart_Click(object sender, EventArgs e)
         {

@@ -16,9 +16,15 @@ namespace GoFish
 
         public Game(string playerName, IEnumerable<string> opponentNames, TextBox textBoxOnForm)
         {
-            Random random = new Random(); this.textBoxOnForm = textBoxOnForm; players = new List<Player>();
-            players.Add(new Player(playerName, random, textBoxOnForm)); foreach (string player in opponentNames)
-                players.Add(new Player(player, random, textBoxOnForm)); books = new Dictionary<Values, Player>(); stock = new Deck(); Deal();
+            Random random = new Random();
+            this.textBoxOnForm = textBoxOnForm;
+            players = new List<Player>();
+            players.Add(new Player(playerName, random, textBoxOnForm));
+            foreach (string player in opponentNames)
+                players.Add(new Player(player, random, textBoxOnForm));
+            books = new Dictionary<Values, Player>();
+            stock = new Deck();
+            Deal();
             players[0].SortHand();
         }
 

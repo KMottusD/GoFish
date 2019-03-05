@@ -8,7 +8,6 @@ namespace GoFish
 {
     class Card
     {
-
         public Suits Suit { get; set; }
         public Values Value { get; set; }
 
@@ -25,9 +24,5 @@ namespace GoFish
             if (value == Values.Six) return "Sixes";
             else return value.ToString() + "s";
         }
-
     }
-
-
-
 }

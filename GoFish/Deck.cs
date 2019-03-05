@@ -23,6 +23,7 @@ namespace GoFish
         {
             cards = new List<Card>(initialCards);
         }
+
         public int Count { get { return cards.Count; } }
         
         public void Add (Card cardToAdd)
